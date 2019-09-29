@@ -49,4 +49,13 @@ Thực hiện command bên dưới để cài đặt những package cần thi�
 Submodule là các external project cần thiết cho việc xây dựng nội dung blog. Để cài đặt các submodule ta thực hiện các command sau:
 > git submodule update --init
 
+## Generate html files
+Tại thư mục gốc $workspace\freshsdata\:
+> pelican content
+
+## Start local host
+Di chuyển vào $workspace\freshsdata\output\:
+> python -m pelican.server
+Mở localhost:8000 trên web browser để kiểm tra kết quả.
+
 
