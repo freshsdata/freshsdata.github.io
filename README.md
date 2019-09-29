@@ -29,21 +29,24 @@ Hiện tại file .gitignore đã được setup để ignore đi một số fil
 ## Virtual environment
 Trong quá trình xây dựng nội dung cho blog, virtual environment được sử dụng làm môi trường làm việc độc lập cho project. Trong môi trường làm việc này cần setup một số module cần thiết được liệt kê trong file requirements.txt.
 * Chú ý: Môi trường sử dụng trong hướng dẫn là Windows 10.
+
 ### Yêu cầu trước khi tạo virtual environment
 1. [Python version 3.7.4](https://www.python.org/downloads/) hoặc cao hơn.
 2. [Pip package](https://pypi.org/project/pip/).
 3. [virtualenv package](https://pypi.org/project/virtualenv/). Sử dụng command "pip install virtualenv" để cài đặc virtualenv.
+
 ### Tạo và activate virtual environment
 Thực hiện commands sau để tạo và activate virtual environment với tên venv.
 > virtualenv venv
 > .\venv\Scripts\activate
+
 ## Install requirement packages
 Danh sách các package cần thiết trong quá trình xây dựng nội dung cho blog được liệt kê trong file requirements.txt.
 Thực hiện command bên dưới để cài đặt những package cần thiết trong venv.
 > pip install -r requirements.txt
+
 ## Install submodules
 Submodule là các external project cần thiết cho việc xây dựng nội dung blog. Để cài đặt các submodule ta thực hiện các command sau:
-> git submodule init
-> git submodule update
+> git submodule update --init
 
 
